@@ -1,0 +1,13 @@
+name: My first workflow
+on: push
+
+jobs:
+    CI_CD_Workflow:
+        runs-on: ubuntu-latest
+        steps:
+        -   name: Hello
+            run: echo "Hello"
+        -   name: List files
+            run: ls
+
+
