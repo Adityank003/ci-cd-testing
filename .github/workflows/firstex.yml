@@ -5,6 +5,8 @@ jobs:
     CI_CD_Workflow:
         runs-on: ubuntu-latest
         steps:
+        -   name: Checkout Action
+            uses: actions/checkout@v4
         -   name: Hello
             run: echo "Hello"
         -   name: List files
